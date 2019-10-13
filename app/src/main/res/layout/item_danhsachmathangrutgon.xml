@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="vn.lachongmedia.appnv.CustomData" />
+        <variable
+            name="mathang"
+            type="vn.lachongmedia.appnv.object.MatHang" />
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:background="@drawable/box"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{mathang.tenHang}"
+                android:textColor="@color/colorTextBlack"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{CustomData.hienThiGia(mathang.giaBuon,mathang.giaLe)}"
+                android:textColor="@color/colorTextBlack" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_4dp"
+        android:layout_marginBottom="@dimen/margin_4dp"
+        android:background="@color/colorGray" />
+</LinearLayout>
+</layout>

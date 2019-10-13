@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorMain"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivBack"
+            android:layout_margin="@dimen/margin_normal"
+            android:background="@drawable/ic_keyboard_arrow_left_white_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:gravity="center"
+            android:text="@string/thanhtoan"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/clButton"
+        android:layout_below="@+id/llHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:drawableLeft="@drawable/ic_store_mall_directory_black_24dp"
+                android:gravity="center_vertical"
+                android:text="Khách hàng số 1"
+                android:textColor="@color/colorTextBlack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                android:gravity="center_vertical"
+                android:text="Địa chỉ"
+                android:textColor="@color/colorTextBlack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:drawableLeft="@drawable/ic_star_black_24dp"
+                android:gravity="center_vertical"
+                android:text="Chưa giao hàng"
+                android:textColor="@color/colorTextBlack"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_size_small"
+                    android:id="@+id/btXemLichSu"
+                    android:background="@drawable/buttongground"
+                    android:drawableLeft="@drawable/ic_description_white_24dp"
+                    android:paddingLeft="@dimen/margin_normal"
+                    android:paddingRight="@dimen/margin_normal"
+                    android:text="@string/xemlichsu"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_size_small"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:background="@drawable/buttongground"
+                    android:drawableLeft="@drawable/ic_directions_white_24dp"
+                    android:paddingLeft="@dimen/margin_normal"
+                    android:paddingRight="@dimen/margin_normal"
+                    android:text="Chỉ đường"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_big"
+                android:layout_marginTop="@dimen/margin_big"
+                android:layout_marginBottom="@dimen/margin_big"
+                android:background="@color/colorGray1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tongtiendonhang"
+                    android:textColor="@color/colorTextBlack" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="10,000,000 VNĐ"
+                    android:textColor="@color/colorTextBlack" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sotiendathanhtoan"
+                    android:textColor="@color/colorTextBlack" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="5,000,000 VNĐ"
+                    android:textColor="@color/colorTextBlack" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sotienphaithanhtoan"
+                    android:textColor="@color/colorTextBlack" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="5,000,000 VNĐ"
+                    android:textColor="@color/colorTextBlack" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/sotienthanhtoanhaicham"
+                    android:textColor="@color/colorTextBlack" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:textColor="@color/colorTextBlack" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ghichuhaicham"
+                    android:textColor="@color/colorTextBlack" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTextBlack"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_normal"
+        app:layout_constraintHorizontal_chainStyle="spread_inside">
+
+        <Button
+            android:id="@+id/btDatHang"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:background="@drawable/buttongground"
+            android:text="@string/thanhtoan"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/guideline" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <Button
+            android:id="@+id/btGui"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:background="@drawable/buttongground"
+            android:text="@string/thanhtoantoanbo"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintLeft_toRightOf="@+id/guideline"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+
+    </data>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    >
+    <LinearLayout
+        android:layout_height="@dimen/height_size_chitietkh"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/ll_header"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textColor="@color/colorWhite"
+            android:text="@string/kehoachtn"/>
+
+    </LinearLayout>
+    <ListView
+       android:layout_below="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorWhite"
+        android:layout_above="@+id/llbutton"
+        android:dividerHeight="8dp"
+        android:layout_margin="10dp"
+        android:id="@+id/lv_kehoachtrongngay"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llbutton"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/margin_best"
+        android:layout_alignParentBottom="true">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_Thoat"
+        android:background="@drawable/buttongground"
+        android:textColor="@color/colorWhite"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/thoat"/>
+    </LinearLayout>
+
+</RelativeLayout>
+</layout>

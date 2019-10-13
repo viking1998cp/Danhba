@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:padding="3dp"
+            android:background="@color/colorGray1"
+            android:id="@+id/lnHeaDer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/ic_event_note_blue_24dp"
+                android:id="@+id/imvNote"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_toRightOf="@id/imvNote"
+                android:textSize="16dp"
+                android:id="@+id/tvInformationUserNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_normal"
+                android:textColor="@color/colorTextBlack"
+                android:text="Khách hàng 0-09:54"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleContentNote"
+            android:layout_below="@+id/lnHeaDer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+</layout>
+

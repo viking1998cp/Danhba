@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="vn.lachongmedia.appnv.CustomData" />
+        <variable
+            name="tinnhangroup"
+            type="vn.lachongmedia.appnv.object.TinNhanGroup" />
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:background="@drawable/background_circle_yellow"
+            android:gravity="center"
+            android:text="@{CustomData.tenQuanLy(tinnhangroup.tenQuanLy)}"
+            android:textColor="@color/colorWhite" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{tinnhangroup.tenQuanLy}"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorTextBlack" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_small"
+                    android:text="@{tinnhangroup.thoigiantao}"
+                    android:textColor="@color/colorGray" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Test"
+                android:textColor="@color/colorTextBlack" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextBlack"
+        android:text="@{tinnhangroup.noidung}" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_4dp"
+        android:layout_marginBottom="@dimen/margin_4dp"
+        android:background="@color/colorGray" />
+</LinearLayout>
+</layout>

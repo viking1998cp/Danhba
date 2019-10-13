@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/groupCha"
+        android:checkableBehavior="single"
+        android:visible="true">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/trangchu" />
+
+        <item
+            android:id="@+id/nav_sms"
+            android:icon="@drawable/ic_message_black_24dp"
+            android:title="@string/tinnhan"
+            />
+        <item
+            android:id="@+id/nav_vaoradiem"
+            android:icon="@drawable/ic_message_black_24dp"
+            android:title="@string/vaoradiem" />
+        <item
+            android:id="@+id/nav_takephoto"
+            android:icon="@drawable/ic_camera_black_24dp"
+            android:title="@string/chupvaguianh" />
+        <item
+            android:id="@+id/nav_lichhen"
+            android:icon="@drawable/ic_message_black_24dp"
+            android:title="@string/lichhen" />
+        <item
+            android:id="@+id/nav_customer"
+            android:icon="@drawable/ic_account_box_black_24dp"
+            android:title="@string/khachhang"
+            app:actionLayout="@layout/arrow_menu_lachong" />
+        <item
+            android:id="@+id/nav_schedule"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="@string/kehoach"
+            app:actionLayout="@layout/arrow_menu_lachong" />
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/ic_insert_chart_black_24dp"
+            app:actionLayout="@layout/arrow_menu_lachong"
+            android:title="@string/baocao" />
+        <item
+            android:id="@+id/nav_setup"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/caidat" />
+        <item
+            android:id="@+id/nav_logut"
+            android:icon="@drawable/ic_system_update_alt_black_24dp"
+            android:title="@string/dangsuat" />
+
+        <!-- khách hàng-->
+
+
+    </group>
+
+    <group
+        android:id="@+id/groupkhachhang"
+        android:checkableBehavior="single"
+        android:visible="false">
+        <item
+            android:id="@+id/nav_backkhachhang"
+            android:icon="@drawable/ic_arrow_back_black_24dp"
+            android:title="@string/trolai" />
+        <item
+            android:id="@+id/nav_taodonhang"
+            android:title="@string/taodonhang" />
+        <item
+            android:id="@+id/nav_xulydonhang"
+            android:title="@string/xulydonhang" />
+        <item
+            android:id="@+id/nav_mathang"
+            android:title="@string/mathang" />
+        <item
+            android:id="@+id/nav_quanlyguiban"
+            android:title="@string/quanlyguiban" />
+        <item
+            android:id="@+id/nav_phanhoi"
+            android:title="@string/phanhoi" />
+        <item
+            android:id="@+id/nav_ghichu"
+            android:title="@string/ghichu" />
+        <item
+            android:id="@+id/nav_thuhoicongno"
+            android:title="@string/thuhoicongno" />
+        <item
+            android:id="@+id/nav_khuyenmai"
+            android:title="@string/khuyenmai" />
+        <item
+            android:id="@+id/nav_danhsachkhachhang"
+            android:title="@string/danhsachkhachang" />
+        <item
+            android:id="@+id/nav_bienbang"
+            android:visible="false"
+            android:title="Biển bảng" />
+    </group>
+    <group
+        android:id="@+id/groupkehoach"
+        android:checkableBehavior="single"
+        android:visible="false">
+        <item
+            android:id="@+id/nav_kehoachback"
+            android:icon="@drawable/ic_arrow_back_black_24dp"
+            android:title="" />
+        <item
+            android:id="@+id/nav_kehoachkhachhang"
+            android:title="@string/kehoachkhachhang" />
+        <item
+            android:id="@+id/nav_kehoachtuyen"
+            android:title="@string/kehoachtuyen" />
+        <item
+            android:id="@+id/nav_kehoachkhuvuc"
+            android:title="@string/kehoachkhuvuc" />
+        <item
+            android:id="@+id/nav_giaoviec"
+            android:title="@string/giaoviec" />
+    </group>
+    <group
+        android:id="@+id/groupbaocao"
+        android:checkableBehavior="single"
+        android:visible="false">
+        <item
+            android:id="@+id/nav_baocaoback"
+            android:icon="@drawable/ic_arrow_back_black_24dp"
+            android:title="" />
+        <item
+            android:id="@+id/nav_phienlamviec"
+            android:title="@string/phienlamiec" />
+        <item
+            android:id="@+id/nav_lichsudichuyen"
+            android:title="@string/lichsudichuyen" />
+        <item
+            android:id="@+id/nav_lichsuvaoradiem"
+            android:title="@string/lichsuvaoradiem" />
+        <item
+            android:id="@+id/nav_baocaokpi"
+            android:title="@string/baocaokpi" />
+        <item
+            android:id="@+id/nav_baocaokpidonhang"
+            android:title="@string/baocaokpidonhang" />
+        <item
+            android:id="@+id/nav_baocaoguiban"
+            android:title="@string/baocaoguiban" />
+        <item
+            android:id="@+id/nav_baocaodoanhthu"
+            android:title="@string/baocaodoanhthu" />
+        <item
+            android:id="@+id/nav_baocaogiaohang"
+            android:title="@string/baocaogiaohang" />
+        <item
+            android:id="@+id/nav_baocaothanhtoan"
+            android:title="@string/baocaothanhtoan" />
+        <item
+            android:id="@+id/nav_baocaomathang"
+            android:title="@string/baocaomathang" />
+    </group>
+    <group
+        android:id="@+id/groupsetup"
+        android:checkableBehavior="single"
+        android:visible="false">
+        <item
+            android:id="@+id/nav_setupback"
+            android:icon="@drawable/ic_arrow_back_black_24dp"
+            android:title="@string/trolai" />
+        <item
+            android:id="@+id/nav_cauhinh"
+            android:title="@string/cauhinh" />
+        <item
+            android:id="@+id/nav_doimatkhau"
+            android:title="@string/doimatkhau" />
+        <item
+            android:id="@+id/nav_lienhe"
+            android:title="@string/lienhe" />
+        <item
+            android:id="@+id/nav_huongdansudung"
+            android:title="@string/huongdansudung" />
+    </group>
+</menu>

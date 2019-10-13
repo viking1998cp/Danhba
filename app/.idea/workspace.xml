@@ -1,0 +1,1477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <device id="3.7in WVGA (Nexus One)" />
+        <device id="Nexus 5X" />
+      </config>
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a526ee22-cc12-4e82-af3f-e0a3c2a057cb" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/fragment/DanhSachMatHangFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="53" column="63" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2882#2883#0" expanded="true" />
+                <element signature="e#2927#2928#0" expanded="true" />
+                <element signature="e#8443#8482#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/item_danhmucmathang.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/activity/DanhSachViecCanLamActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="119" column="23" lean-forward="true" selection-start-line="119" selection-start-column="23" selection-end-line="119" selection-end-column="23" />
+              <folding>
+                <element signature="e#2064#2065#0" expanded="true" />
+                <element signature="e#2104#2105#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/viewmodel/KeHoachViewModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_danhsachmathang.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="112" column="42" selection-start-line="112" selection-start-column="42" selection-end-line="112" selection-end-column="42" />
+              <folding>
+                <element signature="e#5742#5764#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/repository/KeHoachRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-71">
+              <caret line="51" column="131" selection-start-line="51" selection-start-column="131" selection-end-line="51" selection-end-column="131" />
+              <folding>
+                <element signature="e#2159#2231#0" expanded="true" />
+                <element signature="e#2425#2497#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/fragment/SetupFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/fragment/TrangchuFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
+              <folding>
+                <element signature="e#3491#3492#0" expanded="true" />
+                <element signature="e#3544#3545#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_home.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_danhsachvieccanlam.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="47">
+              <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+              <folding>
+                <element signature="e#2894#2916#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Activity_Login</find>
+      <find>imeiMay</find>
+      <find>guiBanMatHang</find>
+      <find>updateMenuItemParentVisibly</find>
+      <find>menuRight</find>
+      <find>navigationView</find>
+      <find>getItem</find>
+      <find>APP_011</find>
+      <find>checkFakeGPS</find>
+      <find>nav_baocaoguiban</find>
+      <find>isFakeGPS</find>
+      <find>:</find>
+      <find>Chú ý</find>
+      <find>colorWhite</find>
+      <find>context</find>
+      <find>raDuKien</find>
+      <find>white</find>
+      <find>thoigiancheckindukien</find>
+      <find>onMapReady</find>
+      <find>googleMap</find>
+      <find>setFragmentMap</find>
+      <find>killOldMap</find>
+      <find>instance</find>
+      <find>Không có dữ liệu</find>
+      <find>idchucnangalbum</find>
+      <find>item_danhsachalbum</find>
+      <find>Có</find>
+      <find>path_thumbnail_medium</find>
+      <find>Config</find>
+      <find>mFusedLocationClient</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>LoginActivity</replace>
+      <replace>findItem</replace>
+      <replace>;//</replace>
+      <replace>colorBlack</replace>
+      <replace>raThucTe</replace>
+      <replace>colorTextBlack</replace>
+      <replace>Common</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/RaDiemRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/CheckOutFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/network/chupanh/ListAlbumRespon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/viewmodel/RaDiemViewModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/DanhSachAlbumRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/fragment_danhsachalbum.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/viewmodel/DanhSachAlbumViewModel.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/item_danhsachalbum.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/adapter/AdapterRecyclerDanhSachAlbum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/viewmodel/AlbumViewModel.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/grid_item_imagealbum.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_chup_anh__new.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/object/CameraOBJ.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/mannager/GoogleApiModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/customcamera/CameraPreview.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/Activity_ChupAnh_New.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/adapter/Adapter_ImageAlbum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/object/Check.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/network/chupanh/AlbumRespon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/AlbumRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/network/NetContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/object/ImageAlbumObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/object/AlbumObject.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_albumanh.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/CustomData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/mannager/AndroidMultiPartEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/service/UploadImageService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/network/chupanh/SendAlbumRespon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/network/Service.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/viewmodel/SendAlbumViewModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/SendAlbumRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/Common.java" />
+        <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/DanhSachAlbumFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/MainActivity.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/AlbumActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ksmartui/mannager/DataBaseHanlder.java" />
+        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/CustomData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/activity/ChonDanhMucActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_chondanhmuc.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_danhsachvieccanlam.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/item_danhmucmathang.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/fragment/DanhSachMatHangFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/fragment_home.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/fragment/TrangchuFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/activity/DanhSachViecCanLamActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/repository/KeHoachRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/fragment_danhsachmathang.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="KsmartSaleUI" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="KsmartSaleUI" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="KsmartSaleUI" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="appnv" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KsmartSaleUI" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="appnv" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="fragment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KsmartSaleUI" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="KsmartSaleUI" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="KsmartSaleUI" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="device.picker.selection" value="4a4471b20005" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/VSCN-master/VSCN-master" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\lachongproject\KsmartSaleUI\app\src\main\java\vn\lachongmedia\appnv\fragment" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.ksmartui.mannager" />
+      <recent name="com.example.ksmartui.service" />
+      <recent name="com.example.ksmartui.object" />
+      <recent name="com.example.ksmartui.adapter" />
+      <recent name="com.example.ksmartui.activity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\lachongproject\KsmartSaleUI\app\src\main\res" />
+      <recent name="D:\lachongproject\KsmartSaleUI\app\src\main\res\values-v21" />
+      <recent name="D:\lachongproject\KsmartSaleUI\app\src\main\res\drawable-v21" />
+      <recent name="D:\lachongproject\KsmartSaleUI\app\src\main\res\layout" />
+      <recent name="D:\lachongproject\KsmartSaleUI\app\src\main\java\com\example\ksmartui" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a526ee22-cc12-4e82-af3f-e0a3c2a057cb" name="Default Changelist" comment="" />
+      <created>1562832126838</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562832126838</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.23146747" />
+      <window_info id="Structure" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Resources Explorer" order="7" />
+      <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Logcat" order="0" sideWeight="0.8774584" weight="0.26530612" />
+      <window_info anchor="bottom" id="TODO" order="1" sideWeight="0.49924356" weight="0.32142857" />
+      <window_info anchor="bottom" id="Android Profiler" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" sideWeight="0.4977307" weight="0.6394558" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.8260212" weight="0.05102041" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.16792738" side_tool="true" visible="true" weight="0.27040815" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.5612708" weight="0.39115646" />
+      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.8320726" visible="true" weight="0.27040815" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info active="true" anchor="right" id="Preview" order="5" visible="true" weight="0.12783661" />
+      <window_info active="true" anchor="right" id="Hierarchy" order="6" visible="true" weight="0.34114978" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>464</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>470</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>474</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>473</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>524</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>526</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>525</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>468</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>621</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint suspend="NONE" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>623</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>624</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>625</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>476</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>477</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>652</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>150</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>151</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>153</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>181</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>305</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>306</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>176</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>317</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>319</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>320</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>475</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/MainActivity.java</url>
+          <line>90</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>188</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/MainActivity.java</url>
+          <line>159</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>354</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>356</line>
+          <properties />
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>357</line>
+          <properties />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>478</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/TrangchuFragment.java</url>
+          <line>288</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/TrangchuFragment.java</url>
+          <line>424</line>
+          <properties />
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/TrangchuFragment.java</url>
+          <line>268</line>
+          <properties />
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/TrangchuFragment.java</url>
+          <line>271</line>
+          <properties />
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/TrangchuFragment.java</url>
+          <line>281</line>
+          <properties />
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/TrangchuFragment.java</url>
+          <line>276</line>
+          <properties />
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/KeHoachRepository.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/DanhSachViecCanLamActivity.java</url>
+          <line>110</line>
+          <properties />
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/DanhSachViecCanLamActivity.java</url>
+          <line>111</line>
+          <properties />
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/DanhSachViecCanLamActivity.java</url>
+          <line>112</line>
+          <properties />
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/CheckOutFragment.java</url>
+          <line>72</line>
+          <properties />
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/CheckOutFragment.java</url>
+          <line>74</line>
+          <properties />
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/CheckOutFragment.java</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/CheckOutFragment.java</url>
+          <line>78</line>
+          <properties />
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/CheckOutFragment.java</url>
+          <line>219</line>
+          <properties />
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/CheckOutFragment.java</url>
+          <line>220</line>
+          <properties />
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/CheckOutFragment.java</url>
+          <line>221</line>
+          <properties />
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/CheckOutFragment.java</url>
+          <line>222</line>
+          <properties />
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/CheckOutFragment.java</url>
+          <line>217</line>
+          <properties />
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/VaoDiemRepository.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/VaoDiemRepository.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/VaoDiemRepository.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/VaoDiemRepository.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/VaoDiemRepository.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/VaoDiemRepository.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/CheckOutFragment.java</url>
+          <line>224</line>
+          <properties />
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/CheckOutFragment.java</url>
+          <line>228</line>
+          <properties />
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/CheckOutFragment.java</url>
+          <line>227</line>
+          <properties />
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/CheckOutFragment.java</url>
+          <line>101</line>
+          <properties />
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/CheckOutFragment.java</url>
+          <line>94</line>
+          <properties />
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/CheckOutFragment.java</url>
+          <line>97</line>
+          <properties />
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/RaDiemRepository.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/RaDiemRepository.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/RaDiemRepository.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/RaDiemRepository.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/RaDiemRepository.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/CuaHangDeVaoDiemRepository.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/CuaHangDeVaoDiemRepository.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/CuaHangDeVaoDiemRepository.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/AlbumActivity.java</url>
+          <line>290</line>
+          <properties />
+          <option name="timeStamp" value="146" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/AlbumActivity.java</url>
+          <line>294</line>
+          <properties />
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/AlbumActivity.java</url>
+          <line>159</line>
+          <properties />
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/AlbumRepository.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/AlbumRepository.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/AlbumActivity.java</url>
+          <line>281</line>
+          <properties />
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/AlbumActivity.java</url>
+          <line>280</line>
+          <properties />
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/AlbumActivity.java</url>
+          <line>285</line>
+          <properties />
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/AlbumRepository.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/AlbumRepository.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/AlbumRepository.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/AlbumRepository.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/AlbumRepository.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="159" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/AlbumRepository.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/AlbumRepository.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="161" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/adapter/Adapter_ImageAlbum.java</url>
+          <line>115</line>
+          <properties />
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/adapter/Adapter_ImageAlbum.java</url>
+          <line>118</line>
+          <properties />
+          <option name="timeStamp" value="165" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/adapter/Adapter_ImageAlbum.java</url>
+          <line>121</line>
+          <properties />
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/adapter/Adapter_ImageAlbum.java</url>
+          <line>87</line>
+          <properties />
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/AlbumActivity.java</url>
+          <line>292</line>
+          <properties />
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/AlbumActivity.java</url>
+          <line>241</line>
+          <properties />
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/AlbumActivity.java</url>
+          <line>243</line>
+          <properties />
+          <option name="timeStamp" value="171" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/AlbumActivity.java</url>
+          <line>244</line>
+          <properties />
+          <option name="timeStamp" value="172" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/adapter/Adapter_ImageAlbum.java</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="174" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/adapter/Adapter_ImageAlbum.java</url>
+          <line>111</line>
+          <properties />
+          <option name="timeStamp" value="176" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/adapter/Adapter_ImageAlbum.java</url>
+          <line>112</line>
+          <properties />
+          <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/adapter/Adapter_ImageAlbum.java</url>
+          <line>113</line>
+          <properties />
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/adapter/Adapter_ImageAlbum.java</url>
+          <line>114</line>
+          <properties />
+          <option name="timeStamp" value="179" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/adapter/Adapter_ImageAlbum.java</url>
+          <line>123</line>
+          <properties />
+          <option name="timeStamp" value="180" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/adapter/Adapter_ImageAlbum.java</url>
+          <line>125</line>
+          <properties />
+          <option name="timeStamp" value="181" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/adapter/Adapter_ImageAlbum.java</url>
+          <line>127</line>
+          <properties />
+          <option name="timeStamp" value="182" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/adapter/Adapter_ImageAlbum.java</url>
+          <line>138</line>
+          <properties />
+          <option name="timeStamp" value="183" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/adapter/Adapter_ImageAlbum.java</url>
+          <line>140</line>
+          <properties />
+          <option name="timeStamp" value="184" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/adapter/Adapter_ImageAlbum.java</url>
+          <line>141</line>
+          <properties />
+          <option name="timeStamp" value="185" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/fragment/DanhSachMatHangFragment.java</url>
+          <line>192</line>
+          <properties />
+          <option name="timeStamp" value="186" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/MainActivity.java</url>
+          <line>518</line>
+          <properties />
+          <option name="timeStamp" value="189" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/fragment/DanhSachMatHangFragment.java</url>
+          <line>198</line>
+          <properties />
+          <option name="timeStamp" value="190" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/fragment/DanhSachMatHangFragment.java</url>
+          <line>193</line>
+          <properties />
+          <option name="timeStamp" value="191" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/fragment/DanhSachMatHangFragment.java</url>
+          <line>195</line>
+          <properties />
+          <option name="timeStamp" value="192" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/fragment/DanhSachMatHangFragment.java</url>
+          <line>197</line>
+          <properties />
+          <option name="timeStamp" value="193" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/MainActivity.java</url>
+          <line>528</line>
+          <properties />
+          <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/fragment/DanhSachMatHangFragment.java</url>
+          <line>191</line>
+          <properties />
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/LoginActivity.java</url>
+          <line>453</line>
+          <properties class="com.example.ksmartui.activity.LoginActivity" />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog>
+          <selected-grouping-rules>
+            <grouping-rule id="XBreakpointGroupingByClassRule" />
+            <grouping-rule id="XBreakpointGroupingByPackageRule" />
+          </selected-grouping-rules>
+        </breakpoints-dialog>
+      </breakpoints-dialog>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="app">
+        <watch expression="binding.etID.getText().toString()" />
+        <watch expression="commonRespon" />
+        <watch expression="loginRespon" />
+        <watch expression=" MaChucNang.getInstance()" />
+        <watch expression="MaChucNang.getInstance()" />
+        <watch expression="MaChucNang.getInstance().isTrangChu()" />
+        <watch expression="MaChucNang.getInstance().isTinNhan()" />
+        <watch expression="R.id.nav_home" />
+        <watch expression=" menu.getItem(R.id.nav_home)" />
+        <watch expression="MaChucNang.getInstance()" />
+        <watch expression="MaChucNang.getInstance()" />
+        <watch expression="e" />
+        <watch expression="flagobj.VDOBJ" />
+        <watch expression="flagobj.VDOBJ.getDiachi()" />
+        <watch expression="albumRespon" />
+        <watch expression="temp" />
+        <watch expression="temp" language="JAVA" />
+        <watch expression="temp.getPath_thumbnail_small()" language="JAVA" />
+        <watch expression="data.getStringExtra(&quot;ten_danhmuccha&quot;)" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>temp.getPath_thumbnail_small()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>temp</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/item_danhsachalbum.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_albumanh.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3859">
+          <caret line="227" selection-start-line="227" selection-end-line="227" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/widget/AbsListView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38522">
+          <caret line="2387" selection-start-line="2387" selection-end-line="2387" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/grid_item_imagealbum.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/mannager/AndroidMultiPartEntity.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/CustomData.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.0.0/bcd167792ec03e930d5c8345c99ae07b2627de84/fragment-1.0.0-sources.jar!/androidx/fragment/app/FragmentActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="179" column="16" selection-start-line="179" selection-start-column="16" selection-end-line="179" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/service/UploadImageService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/network/chupanh/SendAlbumRespon.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/CuaHangDeVaoDiemRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/VaoDiemRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/network/Service.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/viewmodel/VaoDiemViewModel.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/SetupFragment.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/TrangchuFragment.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/AlbumRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/Common.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/viewmodel/AlbumViewModel.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/fragment/DanhSachAlbumFragment.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/MainActivity.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/adapter/Adapter_ImageAlbum.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/repository/SendAlbumRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/viewmodel/SendAlbumViewModel.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/mannager/DataBaseHanlder.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/AlbumActivity.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ksmartui/activity/SplashActivity.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/res/values-v21/styles.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values-v21/xml/file_paths.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="46" column="60" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/adapter/AdapterRecyclerDanhMucMatHang.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="40" column="147" selection-start-line="40" selection-start-column="147" selection-end-line="40" selection-end-column="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/CustomData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2074">
+          <caret line="131" column="47" selection-start-line="131" selection-start-column="47" selection-end-line="131" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="97" column="48" selection-start-line="97" selection-start-column="48" selection-end-line="97" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/xml/file_paths.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/activity/ChonDanhMucActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="41" column="67" selection-start-line="41" selection-start-column="67" selection-end-line="41" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_chondanhmuc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+          <folding>
+            <element signature="e#1533#1555#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/item_mathang.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2061" />
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/item_kehoachkhachhang.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1534" />
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/item_kehoachdonhang.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225">
+          <folding>
+            <element signature="e#1179#3373#0" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/item_danhmucmathang.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_danhsachvieccanlam.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+          <folding>
+            <element signature="e#2894#2916#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/fragment/SetupFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_home.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/fragment/TrangchuFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
+          <folding>
+            <element signature="e#3491#3492#0" expanded="true" />
+            <element signature="e#3544#3545#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/viewmodel/KeHoachViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/activity/DanhSachViecCanLamActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="119" column="23" lean-forward="true" selection-start-line="119" selection-start-column="23" selection-end-line="119" selection-end-column="23" />
+          <folding>
+            <element signature="e#2064#2065#0" expanded="true" />
+            <element signature="e#2104#2105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/repository/KeHoachRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-71">
+          <caret line="51" column="131" selection-start-line="51" selection-start-column="131" selection-end-line="51" selection-end-column="131" />
+          <folding>
+            <element signature="e#2159#2231#0" expanded="true" />
+            <element signature="e#2425#2497#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/lachongmedia/appnv/fragment/DanhSachMatHangFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="53" column="63" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2882#2883#0" expanded="true" />
+            <element signature="e#2927#2928#0" expanded="true" />
+            <element signature="e#8443#8482#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_danhsachmathang.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="112" column="42" selection-start-line="112" selection-start-column="42" selection-end-line="112" selection-end-column="42" />
+          <folding>
+            <element signature="e#5742#5764#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+  </component>
+</project>

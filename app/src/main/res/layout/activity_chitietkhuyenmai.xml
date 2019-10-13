@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMain"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:background="@drawable/ic_keyboard_arrow_left_white_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:drawableRight="@drawable/ic_save_white_24dp"
+            android:gravity="center"
+            android:text="@string/chitietkhuyenmai"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_normal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:background="@drawable/sale" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tên CTKM"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="@dimen/text_size_big"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/thoihanhaicham"
+                        android:textColor="@color/colorTextBlack" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="01/07/2019-08/09/2017"
+                        android:textColor="@color/colorTextBlack" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_normal">
+
+                <TextView
+                    android:id="@+id/tvYeuCau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:text="@string/yeucautongtienhaicham"
+                    android:textColor="@color/colorTextBlack" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvYeuCau"
+                    android:text="đ100,000 - đ1,000,000"
+                    android:textColor="@color/colorTextBlack" />
+
+                <TextView
+                    android:id="@+id/tvChietKhau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvYeuCau"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:text="@string/chieykhautienhaicham"
+                    android:textColor="@color/colorTextBlack" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvYeuCau"
+                    android:layout_toRightOf="@+id/tvYeuCau"
+                    android:text="đ100,000"
+                    android:textColor="@color/colorTextBlack" />
+
+                <TextView
+                    android:id="@+id/tvChietKhauPhan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvChietKhau"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:text="@string/chietkhauphantramhaicham"
+                    android:textColor="@color/colorTextBlack" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvChietKhau"
+                    android:layout_toRightOf="@+id/tvYeuCau"
+                    android:text="10"
+                    android:textColor="@color/colorTextBlack" />
+
+                <TextView
+                    android:id="@+id/tvGhiChu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvChietKhauPhan"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:text="@string/ghichuhaicham"
+                    android:textColor="@color/colorTextBlack" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvChietKhauPhan"
+                    android:layout_toRightOf="@+id/tvYeuCau"
+                    android:text="qqqqq"
+                    android:textColor="@color/colorTextBlack" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_normal"
+                android:gravity="center"
+                android:text="@string/danhsachmathangtang"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/text_size_big"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGray1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_normal">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/backgroundsearch"
+                    android:drawableLeft="@drawable/ic_search_gray_24dp"
+                    android:gravity="center_vertical"
+                    android:hint="Tìm kiếm" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvDanhSachMatHang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_normal">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

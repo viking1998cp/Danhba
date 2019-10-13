@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+        <variable
+            name="kehoachdonhang"
+            type="vn.lachongmedia.appnv.object.KeHoachDonHangObject" />
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_kehoach"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"       
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_store_blue_24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:layout_margin="5dp"
+            android:gravity="center|left"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/tv_tenkhachhangdonhang"
+                android:text="@{((vn.lachongmedia.appnv.object.KeHoachOBJ)kehoachdonhang).tencuahang}"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextBlack"
+                 />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/colorTextBlack"
+                    android:id="@+id/tv_madonhang"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/colorTextBlack"
+                    android:id="@+id/tv_tongtiendonhang"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_thoigiandukien"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="@color/colorTextBlack"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

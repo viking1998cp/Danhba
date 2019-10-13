@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<data>
+    <variable
+        name="lichhen"
+        type="vn.lachongmedia.appnv.object.LichHenObject" />
+</data>
+
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    swipe:leftEdgeSwipeOffset="0dp"
+    swipe:rightEdgeSwipeOffset="0dp">
+    <LinearLayout
+        android:id="@+id/llLichHen"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/bt_delete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fd0101"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:gravity="center"
+            android:text="@string/huy"
+            android:textColor="@color/colorWhite"
+            android:visibility="visible" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/ll_roottn"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_normal"
+                android:id="@+id/ivTrangThai"
+
+                android:background="@drawable/background_circle_yellow" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{lichhen.tenKhachHang}"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorTextBlack" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@{lichhen.thoiGianHienThi}"
+
+                        android:textColor="@color/colorTextBlack" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{lichhen.noiDungHen}"
+                    android:textColor="@color/colorTextBlack" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_4dp"
+            android:layout_marginBottom="@dimen/margin_4dp"
+            android:background="@color/colorGray" />
+    </LinearLayout>
+</com.daimajia.swipe.SwipeLayout>
+</layout>

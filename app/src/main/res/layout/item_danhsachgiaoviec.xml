@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Công việc"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="@dimen/text_size_big" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/delivery"
+                android:backgroundTint="@color/colorMain" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="100,000"
+                android:textColor="@color/colorTextBlack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/pay"
+                android:backgroundTint="@color/colorMain" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="60,000"
+                android:textColor="@color/colorTextBlack" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDiaChiGiao"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:drawableLeft="@drawable/ic_location_on_blue_24dp"
+        android:textColor="@color/colorTextBlack"
+        android:text="Đại Từ, Đại Kim"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDiaChiNhan"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:drawableLeft="@drawable/ic_location_on_blue_24dp"
+        android:textColor="@color/colorTextBlack"
+        android:text="Đại Từ, Đại Kim"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvThoiGianGiao"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_schedule_blue_24dp"
+        android:textColor="@color/colorTextBlack"
+        android:text="10:10 09/07/2019"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_star_blue_24dp"
+        android:textColor="@color/colorTextBlack"
+        android:text="Chưa nhận"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_4dp"
+        android:layout_marginBottom="@dimen/margin_4dp"
+        android:background="@color/colorGray" />
+</LinearLayout>

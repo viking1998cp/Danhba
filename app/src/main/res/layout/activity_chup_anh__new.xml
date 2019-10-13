@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout_capture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/toochlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/camblink"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#ddffffff"
+            android:orientation="vertical"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnCapture"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btcapture"
+        android:onClick="takePicture"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/img_capture_preview"
+        android:layout_width="48.75dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="55dp"
+        android:background="@drawable/noimg" />
+    <ImageView
+        android:id="@+id/img_change_camera_back"
+        android:layout_width="48.75dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/icon_change_camera_back"
+        android:visibility="visible"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/ll_flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/btnFlash"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/flash" />
+
+            <TextView
+                android:id="@+id/tv_auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_camera_auto"
+                android:textColor="@color/colorWhite"
+                android:visibility="visible"
+                android:layout_marginLeft="31dp"
+                android:layout_marginStart="31dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btnQuality"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/imgquality" />
+
+            <TextView
+                android:id="@+id/tvQuality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/sau_image"
+                android:textColor="@color/colorWhite" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorWhite"
+            android:text="X"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_camera_on"
+            android:textColor="@color/colorWhite"
+            android:visibility="visible"
+            android:layout_marginLeft="64dp"
+            android:layout_marginStart="64dp"
+            android:layout_alignTop="@+id/ll_flash"
+            android:layout_toRightOf="@+id/ll_flash"
+            android:layout_toEndOf="@+id/ll_flash" />
+
+        <TextView
+            android:id="@+id/tv_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_camera_off"
+            android:textColor="@color/colorWhite"
+            android:layout_alignBaseline="@+id/tv_on"
+            android:layout_alignBottom="@+id/tv_on"
+            android:layout_toRightOf="@+id/tv_on"
+            android:layout_toEndOf="@+id/tv_on"
+            android:layout_marginLeft="77dp"
+            android:layout_marginStart="77dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_layout_capture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/toochlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="#ccffffff"
+                android:orientation="vertical"
+                android:visibility="invisible"></LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnCapture"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btcapture"
+            android:onClick="takePicture"
+            android:visibility="visible" />
+
+        &lt;!&ndash;<Button
+            android:id="@+id/btnClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/cam_close"
+            android:visibility="visible" />&ndash;&gt;
+
+        <ImageView
+            android:id="@+id/img_capture_preview"
+            android:layout_width="48.75dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="55dp"
+            android:background="@drawable/noimg" />
+
+        <FrameLayout
+            android:layout_width="48.75dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="50dp">
+
+            <ImageView
+                android:id="@+id/img_change_camera_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/icon_change_camera_back" />
+            <ImageView
+                android:id="@+id/img_change_camera_before"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/icon_change_camera_before" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:id="@+id/ll_flash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/btnFlash"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/flash" />
+
+                <TextView
+                    android:id="@+id/tvFlash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Tự động"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_quality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnQuality"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/imgquality" />
+
+                <TextView
+                    android:id="@+id/tvQuality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Sau"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            &lt;!&ndash;<Button
+                android:id="@+id/btnClose"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/cam_close"
+                android:visibility="visible" />&ndash;&gt;
+            <Button
+                android:id="@+id/btnClose"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/white"
+                android:text="X"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+    </RelativeLayout>-->

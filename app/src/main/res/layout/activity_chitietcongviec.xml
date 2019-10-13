@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorMain"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:background="@drawable/ic_keyboard_arrow_left_white_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:drawableRight="@drawable/ic_photo_camera_white_24dp"
+            android:gravity="center"
+            android:text="Chi tiết công việc"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/clButton"
+        android:layout_below="@+id/llHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tên công việc"
+                android:textColor="@color/colorTextBlack"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTienHangTite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/tienhanghaicham"
+                    android:textColor="@color/colorTextBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/tvTienDuocHuongTite"
+                    android:text="đ100,000"
+                    android:textColor="@color/colorTextBlack" />
+
+                <View
+                    android:id="@+id/viewOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tvTienHangTite"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:background="@color/colorGray" />
+
+                <TextView
+                    android:id="@+id/tvTienDuocHuongTite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewOne"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:text="@string/tienduochuonghaicham"
+                    android:textColor="@color/colorTextBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTienDuocHuong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewOne"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/tvTienDuocHuongTite"
+                    android:text="đ100,000"
+                    android:textColor="@color/colorTextBlack" />
+
+                <View
+                    android:id="@+id/viewTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tvTienDuocHuong"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:background="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewTwo"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:text="@string/nhanviechaicham"
+                    android:textColor="@color/colorTextBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNhanViec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewTwo"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/tvTienDuocHuongTite"
+                    android:text="00:00 10/10/2019"
+                    android:textColor="@color/colorTextBlack" />
+
+                <View
+                    android:id="@+id/viewThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tvNhanViec"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:background="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewThree"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:text="@string/trangthaihaicham"
+                    android:textColor="@color/colorTextBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTrangThai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewThree"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/tvTienDuocHuongTite"
+                    android:text="abc"
+                    android:textColor="@color/colorTextBlack" />
+
+                <View
+                    android:id="@+id/viewFour"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tvTrangThai"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:background="@color/colorGray" />
+
+                <TextView
+                    android:id="@+id/tvNoiDung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewFour"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:text="@string/noidunghaicham"
+                    android:textColor="@color/colorTextBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNoiDungContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNoiDung"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:text="qqqqq"
+                    android:textColor="@color/colorTextBlack" />
+
+                <View
+                    android:id="@+id/viewFive"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tvNoiDungContent"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:background="@color/colorGray" />
+
+                <TextView
+                    android:id="@+id/tvDiaChiVaoDiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewFive"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:text="@string/diachivaodiemhaicham"
+                    android:textColor="@color/colorTextBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDiaChiVaoDiemContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDiaChiVaoDiem"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:text="qqqqq"
+                    android:textColor="@color/colorTextBlack" />
+
+                <View
+                    android:id="@+id/viewSix"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tvDiaChiVaoDiemContent"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:background="@color/colorGray" />
+
+                <TextView
+                    android:id="@+id/tvDiaChiRaDiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewSix"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:text="@string/diachiradiemhaicham"
+                    android:textColor="@color/colorTextBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDiaChiRaDiemContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDiaChiRaDiem"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:text="qqqqq"
+                    android:textColor="@color/colorTextBlack" />
+
+                <View
+                    android:id="@+id/viewSeven"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tvDiaChiRaDiemContent"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:background="@color/colorGray" />
+
+                <TextView
+                    android:id="@+id/tvHinhAnh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewSeven"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:text="@string/hinhanhhaicham"
+                    android:textColor="@color/colorTextBlack" />
+
+                <View
+                    android:id="@+id/viewEight"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tvHinhAnh"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:background="@color/colorGray" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:paddingLeft="@dimen/margin_best"
+        android:paddingRight="@dimen/margin_best"
+        android:layout_marginBottom="@dimen/margin_best"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:text="@string/nhanviec"
+        android:background="@drawable/buttongground" />
+
+</RelativeLayout>

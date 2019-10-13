@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMain"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:background="@drawable/ic_keyboard_arrow_left_white_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:drawableRight="@drawable/ic_save_white_24dp"
+            android:gravity="center"
+            android:text="@string/thongtinkhachhang"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@drawable/man"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_normal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_normal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvTenKhachHang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_size_chitietkh"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginRight="@dimen/margin_big"
+                            android:gravity="center_vertical"
+                            android:text="Tên KH:*"
+                            android:textColor="@color/colorTextBlack" />
+
+                        <EditText
+                            android:id="@+id/edTenKhachHang"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tvTenKhachHang"
+                            android:hint="@string/nhaptenkhachhang"
+                            android:singleLine="true"
+                            android:imeOptions="actionNext"
+                            android:textColor="@color/colorTextBlack" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_size_chitietkh"
+                            android:layout_below="@+id/edTenKhachHang"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/edTenKhachHang"
+
+                            android:gravity="center_vertical"
+                            android:text="Mã KH:"
+                            android:textColor="@color/colorTextBlack" />
+
+                        <EditText
+                            android:id="@+id/edMaKhachHang"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/edTenKhachHang"
+                            android:layout_toRightOf="@+id/tvTenKhachHang"
+                            android:hint="@string/nhaptenkhachhang"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            android:textColor="@color/colorTextBlack" />
+
+                        <TextView
+                            android:id="@+id/tvLoaiKhachHang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_size_chitietkh"
+                            android:layout_below="@+id/edMaKhachHang"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/edTenKhachHang"
+                            android:gravity="center_vertical"
+                            android:text="Loại KH:"
+                            android:textColor="@color/colorTextBlack" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spLoaiKhachHang"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/edMaKhachHang"
+                            android:layout_alignBottom="@+id/tvLoaiKhachHang">
+
+                        </androidx.appcompat.widget.AppCompatSpinner>
+
+                        <TextView
+                            android:id="@+id/tvKenhBanHang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_size_chitietkh"
+                            android:layout_below="@+id/spLoaiKhachHang"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/edTenKhachHang"
+                            android:gravity="center_vertical"
+                            android:text="Kênh KH:"
+                            android:textColor="@color/colorTextBlack" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spKenhKhachHang"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/spLoaiKhachHang"
+                            android:layout_alignBottom="@+id/tvKenhBanHang">
+
+                        </androidx.appcompat.widget.AppCompatSpinner>
+
+                        <TextView
+                            android:id="@+id/tvKhachHangCha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_size_chitietkh"
+                            android:layout_below="@+id/spKenhKhachHang"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/edTenKhachHang"
+                            android:gravity="center_vertical"
+                            android:text="KH Cha:"
+                            android:textColor="@color/colorTextBlack" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spKhachHangCha"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/spKenhKhachHang"
+                            android:layout_alignBottom="@+id/tvKhachHangCha">
+
+                        </androidx.appcompat.widget.AppCompatSpinner>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_normal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_normal"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvSoDienThoaiMot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_size_chitietkh"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginRight="@dimen/margin_normal"
+                            android:gravity="center_vertical"
+                            android:text="Số điện thoại: *"
+                            android:textColor="@color/colorTextBlack" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/tvSoDienThoaiMot"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:hint="Số điện thoại"
+                            android:singleLine="true"
+                            android:textColor="@color/colorTextBlack" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvSoDienThoaiHai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_size_chitietkh"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginRight="@dimen/margin_normal"
+                            android:gravity="center_vertical"
+                            android:text="Số điện thoại 2:"
+                            android:textColor="@color/colorTextBlack" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/tvSoDienThoaiHai"
+                            android:hint="Số điện thoại"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            android:textColor="@color/colorTextBlack" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_size_chitietkh"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvSoDienThoaiBa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginRight="@dimen/margin_normal"
+                            android:gravity="center_vertical"
+                            android:text="Số điện thoại 3:"
+                            android:textColor="@color/colorTextBlack" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/tvSoDienThoaiBa"
+                            android:hint="Số điện thoại"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            android:textColor="@color/colorTextBlack" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_normal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_normal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_size_chitietkh"
+                            android:text="Địa chỉ: *            "
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="@dimen/margin_normal"
+                            android:textColor="@color/colorTextBlack" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:drawableRight="@drawable/ic_map_black_24dp"
+                            android:text="Số 1, ABC"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            android:textColor="@color/colorTextBlack" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_size_chitietkh"
+                            android:gravity="center_vertical"
+                            android:text="Tỉnh:"
+                            android:textColor="@color/colorTextBlack" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorTextBlack" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_size_chitietkh"
+                            android:text="Quận/Huyện: *"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorTextBlack" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorTextBlack" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_size_chitietkh"
+                            android:text="Phường/Xã: *"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorTextBlack" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorTextBlack" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_size_chitietkh"
+                            android:text="Đường/Phố:     "
+                            android:layout_marginRight="@dimen/margin_normal"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorTextBlack" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:drawableRight="@drawable/ic_store_blue_24dp"
+                            android:text="Số 1, ABC"
+                            android:imeOptions="actionNext"
+                            android:textColor="@color/colorTextBlack" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_normal">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_normal"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_size_chitietkh"
+                        android:text="Người liên hệ"
+                        android:id="@+id/tvNguoiLienHe"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:textColor="@color/colorTextBlack" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:id="@+id/edNguoiLienHe"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/tvNguoiLienHe"
+                        android:hint="@string/nguoilienhe"
+                        android:textColor="@color/colorTextBlack" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_size_chitietkh"
+                        android:text="@string/masothuehaicham"
+                        android:layout_below="@+id/edNguoiLienHe"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:textColor="@color/colorTextBlack" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:id="@+id/edMaSoThue"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:layout_below="@+id/edNguoiLienHe"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/tvNguoiLienHe"
+                        android:hint="@string/masothue"
+                        android:textColor="@color/colorTextBlack" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_size_chitietkh"
+                        android:text="@string/diachixuathoadonhaicham"
+                        android:layout_below="@+id/edMaSoThue"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/edDiaChiXuatHoaDon"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:textColor="@color/colorTextBlack" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:id="@+id/edDiaChiXuatHoaDon"
+                        android:layout_below="@+id/edMaSoThue"
+                        android:hint="@string/diachixuathoadon"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/tvNguoiLienHe"
+                        android:textColor="@color/colorTextBlack" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_size_chitietkh"
+                        android:text="@string/taikhoannganhanghaicham"
+                        android:layout_below="@+id/edDiaChiXuatHoaDon"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/edDiaChiXuatHoaDon"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:textColor="@color/colorTextBlack" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:id="@+id/edTaiKhoanNganHang"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:layout_below="@+id/edDiaChiXuatHoaDon"
+                        android:hint="@string/taikhoannganhang"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/tvNguoiLienHe"
+                        android:textColor="@color/colorTextBlack" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_size_chitietkh"
+                        android:text="@string/emailhaicham"
+                        android:layout_below="@+id/edTaiKhoanNganHang"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/edDiaChiXuatHoaDon"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:textColor="@color/colorTextBlack" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:id="@+id/edEmail"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:layout_below="@+id/edTaiKhoanNganHang"
+                        android:hint="@string/email"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/tvNguoiLienHe"
+                        android:textColor="@color/colorTextBlack" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_size_chitietkh"
+                        android:text="@string/websitehaicham"
+                        android:layout_below="@+id/edEmail"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/edDiaChiXuatHoaDon"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:textColor="@color/colorTextBlack" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:id="@+id/edWebsite"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:layout_below="@+id/edEmail"
+                        android:hint="@string/website"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/tvNguoiLienHe"
+                        android:textColor="@color/colorTextBlack" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_size_chitietkh"
+                        android:text="@string/ghichuhaicham"
+                        android:id="@+id/tvGhichu"
+                        android:layout_below="@+id/edWebsite"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:textColor="@color/colorTextBlack" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:id="@+id/edGhiChu"
+                        android:layout_below="@+id/tvGhichu"
+                        android:hint="@string/nhapghichu"
+                        android:imeOptions="actionDone"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/colorTextBlack" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

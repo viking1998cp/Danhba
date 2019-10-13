@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+        <import type="vn.lachongmedia.appnv.CustomData" />
+        <variable
+            name="kehoach"
+            type="vn.lachongmedia.appnv.object.KeHoachOBJ" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_kehoach"
+        android:background="@{CustomData.setColor(kehoach.maMau)}"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorWhite"
+                android:background="@drawable/ic_store_blue_24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:gravity="center|left"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/tv_DiaChi"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:text="@{kehoach.tencuahang}"
+                android:textColor="@color/colorWhite"
+                />
+            <TextView
+                android:id="@+id/tv_vieccanlam"
+                android:text="@{CustomData.viecCanLam(kehoach.vieccanlam)}"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                />
+
+            <TextView
+                android:id="@+id/tv_ThoiGian"
+                android:layout_width="wrap_content"
+                android:text="@{CustomData.thoiGianDuKienKeHoach(kehoach.thoigianvaodiemdukien,kehoach.thoigianradiemdukien)}"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+               />
+            <TextView
+                android:id="@+id/tv_ThoiGianthucte"
+                android:text="@{CustomData.thoiGianThucTe(kehoach.thoigianvaodiem,kehoach.thoigianradiem)}"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                />
+            <TextView
+                android:id="@+id/tv_motakehoach"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</layout>
