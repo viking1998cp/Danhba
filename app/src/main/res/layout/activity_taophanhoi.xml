@@ -7,6 +7,7 @@
         android:orientation="vertical">
 
         <LinearLayout
+            android:weightSum="12"
             android:id="@+id/llHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -14,21 +15,30 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:layout_weight="1"
                 android:id="@+id/ivBack"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_margin="@dimen/margin_normal"
                 android:background="@drawable/ic_keyboard_arrow_left_white_24dp" />
+                <TextView
+                    android:layout_weight="10"
+                    android:id="@+id/tvSave"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_normal"
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_normal"
-                android:drawableRight="@drawable/ic_save_white_24dp"
+                    android:gravity="center"
+                    android:text="@string/taophanhoi"
+                    android:textColor="@color/colorWhite" />
+            <ImageView
                 android:gravity="center"
-                android:text="@string/taophanhoi"
-                android:textColor="@color/colorWhite" />
-
+                android:id="@+id/imvSave"
+                android:src="@drawable/ic_save_white_24dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                 />
         </LinearLayout>
 
         <LinearLayout
@@ -47,10 +57,11 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tvKhachhang"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
-                android:text="@string/tatca"
+                android:text="@string/khachhanggoiy"
                 android:textColor="@color/colorTextBlack" />
 
             <ImageView

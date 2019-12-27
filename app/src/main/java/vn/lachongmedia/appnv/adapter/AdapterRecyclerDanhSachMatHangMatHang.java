@@ -44,7 +44,6 @@ public class AdapterRecyclerDanhSachMatHangMatHang extends RecyclerView.Adapter<
             ItemDanhsachmathangrutgonBinding binding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.item_danhsachmathangrutgon, parent, false);
             return new ItemRowSimpleHolder(binding);
         } else {
-
             ItemDanhsachmathangchitietBinding binding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.item_danhsachmathangchitiet, parent, false);
             return new ItemRowDetailHolder(binding);
         }

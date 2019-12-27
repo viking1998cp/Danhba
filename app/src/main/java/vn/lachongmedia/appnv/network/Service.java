@@ -11,6 +11,10 @@ import vn.lachongmedia.appnv.network.checkin.CheckOutResponse;
 import vn.lachongmedia.appnv.network.chupanh.AlbumRespon;
 import vn.lachongmedia.appnv.network.chupanh.ListAlbumRespon;
 import vn.lachongmedia.appnv.network.chupanh.SendAlbumRespon;
+import vn.lachongmedia.appnv.network.ghichu.DanhSachGhiChuRespon;
+import vn.lachongmedia.appnv.network.ghichu.DanhSachTieuChiRespon;
+import vn.lachongmedia.appnv.network.khachhang.DanhSachKhachHangLoadMoreRespon;
+import vn.lachongmedia.appnv.network.khachhang.DanhSachKhachHangRespon;
 import vn.lachongmedia.appnv.network.mathang.DanhMucMatHangRespon;
 import vn.lachongmedia.appnv.network.mathang.DanhSachMatHangLoadMoreRespon;
 import vn.lachongmedia.appnv.network.phanhoi.DanhSachPhanHoiRespon;
@@ -27,6 +31,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.QueryMap;
 import retrofit2.http.Url;
+import vn.lachongmedia.appnv.object.GhiChu.GhiChu;
 import vn.lachongmedia.appnv.object.PhanHoi.PhanHoi;
 
 /**
@@ -106,5 +111,17 @@ public interface Service {
     Call<DanhSachThemPhanHoiRespon> getDanhSachThemPhanHoi(@QueryMap Map<String,String> params);
     @GET("/AppPhanHoi.aspx")
     Call<PhanHoi> themPhanHoi(@QueryMap Map<String,String> params);
+
+    @GET("/AppCheckList.aspx")
+    Call<DanhSachGhiChuRespon> getDanhSachGhiChu(@QueryMap Map<String,String> params);
+    @GET("/AppCheckList.aspx")
+    Call<DanhSachTieuChiRespon> getDanhSachTieuChiGhiChu(@QueryMap Map<String,String> params);
+    @GET("/AppCheckList.aspx")
+    Call<GhiChu> themGhiChu(@QueryMap Map<String,String> params);
+
+    @GET("/AppDanhSachCuaHang_v3.aspx")
+    Call<DanhSachKhachHangLoadMoreRespon> getDanhSachKhachHang(@QueryMap Map<String,String> params);
+
+
 
 }

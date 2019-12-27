@@ -32,6 +32,8 @@ import vn.lachongmedia.appnv.object.PhanHoi.PhanHoi;
 import vn.lachongmedia.appnv.viewmodel.PhanHoi.DanhSachPhanHoiViewModel;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -60,28 +62,22 @@ public class DanhSachPhanHoiFragment extends Fragment {
         setUpSearhTime();
         initChonKhachHang();
         adapter = new AdapterRecyclerDanhSachPhanHoi(listLichSuNhoms);
-
+        cuaHang.setIdcuahang(0);
      /*   MapFragment mapFragment = (MapFragment) getActivity().getFragmentManager()
                 .findFragmentById(R.id.maps);
 */
 
         binding.rvDanhSachKhachHang.setAdapter(adapter);
-        final ArrayList<PhanHoi> phanHois = new ArrayList<>();
-        ArrayList<LichSuNhom> lichSuNhom = new ArrayList<>();
-        PhanHoi phanHoi = new PhanHoi();
-        phanHoi.setLichsunhom(lichSuNhom);
-        phanHois.add(phanHoi);
-        final AdapterRecyclerDanhSachPhanHoi adapterRecyclerDanhSachPhanHoi = new AdapterRecyclerDanhSachPhanHoi( phanHoi.getLichsunhom());
         binding.pullToRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
                 refreshLoad();
             }
         });
-        binding.rvDanhSachKhachHang.setAdapter(adapterRecyclerDanhSachPhanHoi);
-        adapterRecyclerDanhSachPhanHoi.setOnItemClickedListener(new AdapterRecyclerDanhSachPhanHoi.OnItemClickedListener() {
+
+        binding.rvDanhSachKhachHang.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(int postion, View v) {
+            public void onClick(View v) {
 
             }
         });
@@ -154,7 +150,6 @@ public class DanhSachPhanHoiFragment extends Fragment {
 
     private void refreshLoad() {
         isLoading = false;
-        listLichSuNhoms.clear();
         getDanhSachPhanHoi();
     }
 
@@ -163,7 +158,7 @@ public class DanhSachPhanHoiFragment extends Fragment {
         Map<String, String> params = new HashMap<>();
         params.put("token", Common.getToken());
         params.put("idnhanvien", "" + SharedPrefs.getInstance().get(Common.iDNhanVien, Integer.class));
-        params.put("idkhachhang", String.valueOf(idKhachHang));
+        params.put("idkhachhang", String.valueOf(cuaHang.getIdcuahang()));
         params.put("type", "lichsutheonhom" );
         params.put("tungay", binding.tvTuNgay.getText().toString().trim() );
         params.put("denngayngay", binding.tvDenNgay.getText().toString().trim() );
@@ -179,9 +174,21 @@ public class DanhSachPhanHoiFragment extends Fragment {
                     if (danhSachPhanHoiRespon != null) { ;
                         if (danhSachPhanHoiRespon.isStatus()) {
                             if (danhSachPhanHoiRespon.getPhanHoi() != null) {
+                                listLichSuNhoms.clear();
                                 listLichSuNhoms.addAll(danhSachPhanHoiRespon.getPhanHoi());
+                                Collections.sort(listLichSuNhoms, new Comparator<LichSuNhom>() {
+                                    @Override
+                                    public int compare(LichSuNhom o1, LichSuNhom o2) {
+                                        return (Common.convertStringToDate2(o1.getThoiGian())
+                                                .after(Common.convertStringToDate2(o2.getThoiGian())))?-1
+                                                :Common.convertStringToDate2(o1.getThoiGian())
+                                                .equals(Common.convertStringToDate2(o2.getThoiGian()))?0:1 ;
+                                    }
+                                });
+
                                 adapter.notifyDataSetChanged();
-                                binding.rvDanhSachKhachHang.setAdapter(adapter);
+
+
                             } else {
                                 Common.ShowToastLong(getString(R.string.message_no_data));
                             }
@@ -203,11 +210,13 @@ public class DanhSachPhanHoiFragment extends Fragment {
     private void initChonKhachHang() {
         binding.tvChonKhachHang.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), ChonKhachHangActivity.class);
+            intent.putExtra("parentFormId",1);
             getActivity().startActivityForResult(intent, 1);
         });
     }
-    private CuaHang cuaHang;
-    int idKhachHang = 0;
+
+    private CuaHang cuaHang = new CuaHang();
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -215,15 +224,17 @@ public class DanhSachPhanHoiFragment extends Fragment {
             cuaHang = (CuaHang) data.getSerializableExtra("cuahang");
             Log.d("BBB", "onActivityResult: "+cuaHang.getTenCuaHang());
             if (cuaHang == null) {
-                idKhachHang = 0;
                 binding.tvChonKhachHang.setText(getResources().getString(R.string.tatca));
-                refreshLoad();
-            } else {
-                idKhachHang = cuaHang.getIdcuahang();
+            } else { ;
                 binding.tvChonKhachHang.setText(cuaHang.getTenCuaHang());
-                refreshLoad();
             }
 
         }
+    }
+
+    @Override
+    public void onResume() {
+        refreshLoad();
+        super.onResume();
     }
 }

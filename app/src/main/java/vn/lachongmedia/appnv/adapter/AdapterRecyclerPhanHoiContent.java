@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import vn.lachongmedia.appnv.Common;
 import vn.lachongmedia.appnv.R;
 import vn.lachongmedia.appnv.databinding.ItemContentdanhsachphanhoiBinding;
-import vn.lachongmedia.appnv.databinding.ItemHeaderDanhsachphanhoiBinding;
+
 import vn.lachongmedia.appnv.object.MatHang;
 import vn.lachongmedia.appnv.object.PhanHoi.DanhSachPhanHoi;
 import vn.lachongmedia.appnv.object.PhanHoi.PhanHoi;

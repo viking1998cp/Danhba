@@ -126,7 +126,18 @@ public class Common {
        }
        return date;
    }
+    public static Date convertStringToDate2(String dateString) {
 
+        DateFormat df2 = new SimpleDateFormat("yyyy-dd-MM'T'HH:mm:ss");// dd-MM-yyyy HH:mm:ss =  11-02-2017 20:57:50
+        try {
+            date = df2.parse(dateString);//  dateString = "dd-MM-yyyy HH:mm:ss";
+            /*formatteddate = df.format(date);*/
+        } catch (Exception ex) {
+            // System.out.println(ex);
+            return null;
+        }
+        return date;
+    }
     public static String formatChangePointDateTime2(String datetime) {
        try {
 

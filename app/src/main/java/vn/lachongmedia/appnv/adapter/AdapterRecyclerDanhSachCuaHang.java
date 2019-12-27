@@ -1,9 +1,11 @@
 package vn.lachongmedia.appnv.adapter;
 
 import android.content.Context;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
 import androidx.annotation.NonNull;
@@ -51,6 +53,11 @@ public class AdapterRecyclerDanhSachCuaHang extends RecyclerView.Adapter<Recycle
         if (holder instanceof ItemRowHolder) {
 
            ((ItemRowHolder) holder).setBinding(listCuaHang.get(position));
+           if(listCuaHang.get(position).getDiaChi()==null){
+               //Ẩn địa chỉ
+
+               ((ItemRowHolder) holder).binding.tvDiaChiCuaHang.setVisibility(View.GONE);
+           }
         } else if (holder instanceof LoadingViewHolder) {
            // showLoadingView((LoadingViewHolder) viewHolder, position);
         }

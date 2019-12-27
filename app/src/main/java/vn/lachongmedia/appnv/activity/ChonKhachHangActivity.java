@@ -2,6 +2,7 @@ package vn.lachongmedia.appnv.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.NonNull;
@@ -42,10 +43,14 @@ public class ChonKhachHangActivity extends AppCompatActivity {
     private int endList = 1;
     private ArrayList<CuaHang> listCuaHang = new ArrayList<>();
     AdapterRecyclerDanhSachCuaHang adapterRecyclerDanhSachCuaHang;
+    private int parentFormId;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(ChonKhachHangActivity.this, R.layout.activity_chonkhachhang);
+        if(this.getIntent().getExtras() != null){
+            parentFormId = this.getIntent().getExtras().getInt("parentFormId");
+        }
         danhSachCuaHangViewModel = ViewModelProviders.of(this).get(DanhSachCuaHangViewModel.class);
         binding.rvDanhSachKhachHang.setLayoutManager(new LinearLayoutManager(this));
         binding.ivBack.setOnClickListener(new View.OnClickListener() {
@@ -65,8 +70,7 @@ public class ChonKhachHangActivity extends AppCompatActivity {
                 finish();
             }
         });
-        loadMore();
-        getDanhSachKhachHang();
+
 
         binding.pullToRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
@@ -78,6 +82,8 @@ public class ChonKhachHangActivity extends AppCompatActivity {
                 getDanhSachKhachHang();
             }
         });
+        loadMore();
+        getDanhSachKhachHang();
     }
 
     private void hideLoadMore(){
@@ -89,6 +95,7 @@ public class ChonKhachHangActivity extends AppCompatActivity {
         binding.pullToRefresh.setRefreshing(false);
     }
     private void getDanhSachKhachHang() {
+
         if(lastID!=0){
         listCuaHang.add(null);
         adapterRecyclerDanhSachCuaHang.notifyItemInserted(listCuaHang.size() - 1);
@@ -107,6 +114,20 @@ public class ChonKhachHangActivity extends AppCompatActivity {
                     isLoading=false;
                     if (listCuaHangLoadMoreRespon != null) {
                         if (listCuaHangLoadMoreRespon.isStatus()) {
+                            // start form see
+                            if(parentFormId==1){
+                                CuaHang cuaHang = new CuaHang();
+                                cuaHang.setTenCuaHang("Tất cả");
+                                cuaHang.setIdcuahang(0);
+                                listCuaHang.add(cuaHang);
+                            }
+                            // start form create
+                            if(parentFormId==2){
+                                CuaHang cuaHang = new CuaHang();
+                                cuaHang.setTenCuaHang("Khách hàng gợi ý");
+                                cuaHang.setIdcuahang(0);
+                                listCuaHang.add(cuaHang);
+                            }
                             if(lastID!=0){
                                 listCuaHang.remove(listCuaHang.size() - 1);
                                 int scrollPosition = listCuaHang.size();
@@ -167,4 +188,5 @@ public class ChonKhachHangActivity extends AppCompatActivity {
         super.onDestroy();
         binding.pullToRefresh.setVisibility(View.GONE);
     }
+
 }

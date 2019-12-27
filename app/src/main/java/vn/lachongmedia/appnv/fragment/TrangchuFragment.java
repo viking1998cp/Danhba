@@ -353,10 +353,6 @@ public class TrangchuFragment extends Fragment implements OnMapReadyCallback, Go
     @Override
     public void onMapReady(GoogleMap map) {
         googleMap = map;
-       /* CameraPosition cameraPosition = new CameraPosition.Builder()
-                .target(new LatLng(20.994495, 105.831015)).zoom(12).build();
-        googleMap.animateCamera(CameraUpdateFactory
-                .newCameraPosition(cameraPosition));*/
         googleMap.getUiSettings().setRotateGesturesEnabled(false);
         googleMap.setMyLocationEnabled(true);
         googleMap.setOnMarkerClickListener(this);

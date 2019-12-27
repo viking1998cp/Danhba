@@ -5,6 +5,8 @@ import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,11 +25,12 @@ public class AdapterRecyclerTaoPhanHoi extends RecyclerView.Adapter<AdapterRecyc
     private ArrayList<DanhSachPhanHoi> listDanhSachPhanHois;
     private Context context;
     private OnItemClickedListener onItemClickedListener;
-
+    private ArrayList<DanhSachPhanHoi> duLieuPhanHoi;
     public AdapterRecyclerTaoPhanHoi( ArrayList<DanhSachPhanHoi> listDanhSachPhanHois) {
         //type==1 xem chi tiết mặt hàng
         this.context = context;
         this.listDanhSachPhanHois = listDanhSachPhanHois;
+        duLieuPhanHoi = new ArrayList<>();
     }
 
     @NonNull
@@ -42,12 +45,49 @@ public class AdapterRecyclerTaoPhanHoi extends RecyclerView.Adapter<AdapterRecyc
     public void onBindViewHolder(@NonNull ItemRowHolder holder, final int position) {
         DanhSachPhanHoi danhSachPhanHoi = listDanhSachPhanHois.get(position);
         holder.binding.cbTitle.setText(danhSachPhanHoi.getTenPhanHoi());
+        holder.binding.cbTitle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("CCC", "onClick: BBB");
+                if(holder.binding.cbTitle.isChecked()){
+                    danhSachPhanHoi.setChiTiet(holder.binding.editContent.getText().toString());
+                    danhSachPhanHoi.setIDQLLH(danhSachPhanHoi.getIDQLLH());
+                    danhSachPhanHoi.setIDPhanHoi(danhSachPhanHoi.getIDPhanHoi());
+                    duLieuPhanHoi.add(danhSachPhanHoi);
+                    Log.d("BBB", "onClick: "+duLieuPhanHoi.size());
+                }
+            }
+        });
+        holder.binding.editContent.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                for(int i=0;i<duLieuPhanHoi.size();i++){
+                    if(duLieuPhanHoi.get(i).getIDPhanHoi()==danhSachPhanHoi.getIDPhanHoi()){
+                        duLieuPhanHoi.get(i).setChiTiet(s.toString().trim());
+                    }
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
 
     }
 
     @Override
     public int getItemCount() {
         return listDanhSachPhanHois.size();
+    }
+
+    public ArrayList<DanhSachPhanHoi> getDuLieuPhanHoi (){
+        return duLieuPhanHoi;
     }
 
     public class ItemRowHolder extends RecyclerView.ViewHolder implements View.OnClickListener {

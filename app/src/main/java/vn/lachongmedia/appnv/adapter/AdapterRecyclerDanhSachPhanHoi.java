@@ -6,18 +6,14 @@ import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import vn.lachongmedia.appnv.R;
-import vn.lachongmedia.appnv.databinding.ItemDanhsachmathangchitietBinding;
-import vn.lachongmedia.appnv.databinding.ItemHeaderDanhsachphanhoiBinding;
-import vn.lachongmedia.appnv.object.CuaHang;
+
+import vn.lachongmedia.appnv.databinding.ItemHeaderDanhsachphanhoivaghichuBinding;
 import vn.lachongmedia.appnv.object.PhanHoi.LichSuNhom;
-import vn.lachongmedia.appnv.object.PhanHoi.PhanHoi;
 
 import java.util.ArrayList;
 /**
@@ -37,7 +33,7 @@ public class AdapterRecyclerDanhSachPhanHoi extends RecyclerView.Adapter<Adapter
     @NonNull
     @Override
     public ItemRowHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        ItemHeaderDanhsachphanhoiBinding binding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.item_header_danhsachphanhoi, parent, false);
+        ItemHeaderDanhsachphanhoivaghichuBinding binding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.item_header_danhsachphanhoivaghichu, parent, false);
         return new AdapterRecyclerDanhSachPhanHoi.ItemRowHolder(binding);
         //View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_danhsachcuahang_checkin, null);
     }
@@ -46,7 +42,12 @@ public class AdapterRecyclerDanhSachPhanHoi extends RecyclerView.Adapter<Adapter
     public void onBindViewHolder(@NonNull ItemRowHolder holder, final int position) {
         LichSuNhom lichSuNhom = listLichSu.get(position);
         // set Header for note
-        holder.binding.tvInformationUserNote.setText(lichSuNhom.getTenKhachHang());
+
+        if(lichSuNhom.getTenKhachHang().equals("")){
+            holder.binding.tvInformationUserNote.setText("Khách hàng gợi ý");
+        }else {
+            holder.binding.tvInformationUserNote.setText(lichSuNhom.getTenKhachHang());
+        }
         //list content
         holder.binding.recycleContentNote.setLayoutManager(new LinearLayoutManager(holder.binding.getRoot().getContext()));
         AdapterRecyclerPhanHoiContent adapter = new AdapterRecyclerPhanHoiContent(lichSuNhom.getDanhsachphanhoi());
@@ -66,9 +67,9 @@ public class AdapterRecyclerDanhSachPhanHoi extends RecyclerView.Adapter<Adapter
     }
 
     public class ItemRowHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        ItemHeaderDanhsachphanhoiBinding binding;
+        ItemHeaderDanhsachphanhoivaghichuBinding binding;
 
-        private ItemRowHolder(ItemHeaderDanhsachphanhoiBinding view) {
+        private ItemRowHolder(ItemHeaderDanhsachphanhoivaghichuBinding view) {
             super(view.getRoot());
             binding = view;
             binding.getRoot().setOnClickListener(this);
